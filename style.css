@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left,#fff 80%,#c3f5ff 20%);
+}
+.navsection{
+    width: 100%;
+    height:20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top,#fff 80%,#c3f5ff 20%);
+
+}
+.logo{
+    width: 30%;
+    color: #fff;
+    background-image: linear-gradient(#8d98e3,#854fee);
+    padding-left: 100px;
+    animation: Ap 2s linear infinite;
+    animation-direction: alternate;
+    box-sizing: border-box;
+
+}
+
+@keyframes Ap{
+    from{padding-left: 100px;}
+    to{padding-left: 170px;}
+}
+nav{
+    width: 65%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    font-size: 25px;
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+    position: relative;
+}
+nav a:first-child{
+    color: blue;
+}
+nav a:before{
+    content:"";
+    position:absolute;
+    top: 120%;
+    left:0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid black !important;
+    transition: all 0.2s linear;
+
+}
+nav a:hover:before{
+    width: 100%;
+}
+
+main{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right img{
+    height: 450px;
+    width: auto;
+    border-radius: 50%;
+}
+.right{
+    border-radius: 98% 10% 100% 0% / 100% 10% 89% 10%  ;
+    background-color: #c3f5ff;
+
+}
+.left{
+    color: black;
+}
+.left h3{
+    margin-bottom: 2%;
+    font-size: 2em;
+    position: relative;
+}
+.left h3:after{
+    content:"";
+    position:absolute;
+    width:400px;
+    height:3px;
+    top:70%;
+    left:15%;
+    background-color: black;
+}
+.left h1{
+    font-size: 2.5em;
+    margin-bottom: 5%;
+}
+.left .btn1{
+    text-decoration: none;
+    font-size:1.5em;
+    font-weight: 300;
+    padding: 8px 8px 8px 8px;
+    margin-right: 5%;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #854fee;
+    box-shadow: 0 10px 30px grey;
+}
+.left .btn2{
+    text-decoration: none;
+    font-size:1.5em;
+    font-weight: 300;
+    padding: 8px 8px 8px 8px;
+    margin-right: 5%;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: white;
+    border:2px solid #4458bc ;
+    box-shadow:none;
+}
